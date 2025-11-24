@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment2">
+
+    <fragment
+        android:id="@+id/startFragment2"
+        android:name="com.example.polskakuchniatradycyjn.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/menuChoiceFragment2"
+        android:name="com.example.polskakuchniatradycyjn.MenuChoiceFragment"
+        android:label="fragment_menu_choice"
+        tools:layout="@layout/fragment_menu_choice" >
+        <action
+            android:id="@+id/action_menuChoiceFragment2_to_customMealFragment"
+            app:destination="@id/customMealFragment" />
+        <action
+            android:id="@+id/action_menuChoiceFragment2_to_readyMealFragment"
+            app:destination="@id/readyMealFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readyMealFragment"
+        android:name="com.example.polskakuchniatradycyjn.ReadyMealFragment"
+        android:label="fragment_ready_meal"
+        tools:layout="@layout/fragment_ready_meal" />
+    <fragment
+        android:id="@+id/customMealFragment"
+        android:name="com.example.polskakuchniatradycyjn.CustomMealFragment"
+        android:label="fragment_custom_meal"
+        tools:layout="@layout/fragment_custom_meal" />
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.polskakuchniatradycyjn.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/totalBarFragment"
+        android:name="com.example.polskakuchniatradycyjn.TotalBarFragment"
+        android:label="fragment_total_bar"
+        tools:layout="@layout/fragment_total_bar" />
+</navigation>
