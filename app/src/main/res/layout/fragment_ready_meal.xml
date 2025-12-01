@@ -10,18 +10,109 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="siemanko" />
-    <View
+        android:text="Wybierz zupe:"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/rosol"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:scaleY="1.5"
+            android:src="@drawable/rosol"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rosół\n15zl"
+            android:textSize="30dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(kliknij w obrazek aby dodac do koszyka)"
+            android:textSize="15dp"
+            android:textColor="@android:color/darker_gray"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/pomidorowka"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:scaleY="1.5"
+            android:src="@drawable/pomidorowka"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomidorówka\n16zl"
+            android:textSize="30dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(kliknij w obrazek aby dodac do koszyka)"
+            android:textSize="15dp"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/Szczawiowka"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:scaleY="1.5"
+            android:src="@drawable/szczawiowka"
+            android:clickable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Szczawiówka\n20zl"
+            android:textSize="30dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(kliknij w obrazek aby dodac do koszyka)"
+            android:textSize="15dp"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+
     <Button
         android:id="@+id/goBackButton2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Wróć"
         android:backgroundTint="#00FF00"
-        android:layout_marginBottom="110dp"
+        android:layout_gravity="left"
+
+        />
+
+    <Button
+        android:id="@+id/goForwardButton2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="Dalej"
+        android:layout_gravity="end"
+
 
         />
 
