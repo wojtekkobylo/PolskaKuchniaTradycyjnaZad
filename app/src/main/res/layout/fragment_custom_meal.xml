@@ -1,28 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomMealFragment"
-    android:orientation="vertical">
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+        android:id="@+id/stageSoup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="siemanko" />
-    <View
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kompozycja: Wybierz Zupę"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSoup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Żurek (15 zł)" />
+
+        <Button
+            android:id="@+id/btnSoup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barszcz (10 zł)" />
+
+        <Button
+            android:id="@+id/btnNext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DALEJ"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/stageMain"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-    <Button
-        android:id="@+id/goBackButton"
-        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Wróć"
-        android:backgroundTint="#00FF00"
-        android:layout_marginBottom="110dp"
+        android:orientation="vertical"
+        android:visibility="gone">
 
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kompozycja: Wybierz Danie"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnMain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Golonka (35 zł)" />
+
+        <Button
+            android:id="@+id/btnMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Placki ziemniaczane (18 zł)" />
+
+        <Button
+            android:id="@+id/btnNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DALEJ"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/stageDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kompozycja: Wybierz Napój"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnDrink1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piwo (10 zł)" />
+
+        <Button
+            android:id="@+id/btnDrink2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cola (6 zł)" />
+
+        <Button
+            android:id="@+id/btnAddOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DODAJ DO ZAMÓWIENIA"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</FrameLayout>

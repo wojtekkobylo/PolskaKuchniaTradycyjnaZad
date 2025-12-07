@@ -1,120 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReadyMealFragment"
-    android:orientation="vertical">
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/stageSoup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wybierz zupe:"
-        android:textStyle="bold"
-        android:textSize="50sp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:clickable="true">
+        android:orientation="vertical"
+        android:visibility="visible">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krok 1: Wybierz Zupę"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
+            
+        <Button
+            android:id="@+id/btnSoup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosół (10 zł)" />
+            
+        <Button
+            android:id="@+id/btnSoup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomidorowa (12 zł)" />
 
-        <ImageView
-            android:id="@+id/rosol"
-            android:layout_width="400px"
-            android:layout_height="match_parent"
-            android:scaleY="1.5"
-            android:src="@drawable/rosol"
-            android:clickable="true"/>
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnSoupNone"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rosół\n15zl"
-            android:textSize="30dp"
-            android:layout_marginRight="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:text="Bez zupy" />
+            
+        <Button
+            android:id="@+id/btnNext1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="(kliknij w obrazek aby dodac do koszyka)"
-            android:textSize="15dp"
-            android:textColor="@android:color/darker_gray"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/pomidorowka"
-            android:layout_width="400px"
-            android:layout_height="match_parent"
-            android:scaleY="1.5"
-            android:src="@drawable/pomidorowka"
-            android:clickable="true"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pomidorówka\n16zl"
-            android:textSize="30dp"
-            android:layout_marginRight="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="(kliknij w obrazek aby dodac do koszyka)"
-            android:textSize="15dp"
-            android:textColor="@android:color/darker_gray"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/Szczawiowka"
-            android:layout_width="400px"
-            android:layout_height="match_parent"
-            android:scaleY="1.5"
-            android:src="@drawable/szczawiowka"
-            android:clickable="true" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Szczawiówka\n20zl"
-            android:textSize="30dp"
-            android:layout_marginRight="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="(kliknij w obrazek aby dodac do koszyka)"
-            android:textSize="15dp"
-            android:textColor="@android:color/darker_gray"
-            />
+            android:text="DALEJ"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="30dp"/>
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/goBackButton2"
-        android:layout_width="200dp"
+    <LinearLayout
+        android:id="@+id/stageMain"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wróć"
-        android:backgroundTint="#00FF00"
-        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krok 2: Wybierz Danie Główne"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
+            
+        <Button
+            android:id="@+id/btnMain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schabowy z Ziemniakami (25 zł)" />
+            
+        <Button
+            android:id="@+id/btnMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pierogi Ruskie (20 zł)" />
 
-        />
+         <Button
+            android:id="@+id/btnMainNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bez dania" />
+            
+        <Button
+            android:id="@+id/btnNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DALEJ"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/goForwardButton2"
-        android:layout_width="200dp"
+
+    <LinearLayout
+        android:id="@+id/stageDrink"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF0000"
-        android:text="Dalej"
-        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krok 3: Wybierz Napój"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
+            
+        <Button
+            android:id="@+id/btnDrink1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kompot (5 zł)" />
+            
+        <Button
+            android:id="@+id/btnDrink2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Woda (3 zł)" />
 
+         <Button
+            android:id="@+id/btnDrinkNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bez napoju" />
+            
+        <Button
+            android:id="@+id/btnAddOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DODAJ DO ZAMÓWIENIA"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
 
-        />
-
-
-</LinearLayout>
+</FrameLayout>

@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:id="@+id/startFragment2"
+        android:id="@+id/startFragment"
         android:title="Start"
-        android:icon="@drawable/baseline_home_24"/>
+        android:icon="@drawable/ic_launcher_foreground" />
     <item
-        android:id="@+id/menuChoiceFragment2"
-        android:title="Zamów"
-        android:icon="@drawable/baseline_dining_24"/>
+        android:id="@+id/menuChoiceFragment"
+        android:title="Zamówienie"
+        android:icon="@drawable/ic_launcher_foreground" />
     <item
         android:id="@+id/summaryFragment"
         android:title="Podsumowanie"
-        android:icon="@drawable/baseline_price_check_24"/>
-
-
+        android:icon="@drawable/ic_launcher_foreground" />
 </menu>
