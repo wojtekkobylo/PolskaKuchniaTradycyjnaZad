@@ -39,27 +39,18 @@ class ReadyMealFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(requireActivity()).get(OrderViewModel::class.java)
 
-
-        binding.btnSoup1.setOnClickListener { viewModel.setZupa("Rosół", 10.0) }
-        binding.btnSoup2.setOnClickListener { viewModel.setZupa("Pomidorowa", 12.0) }
-        binding.btnSoupNone.setOnClickListener { viewModel.setZupa("Brak", 0.0) }
-        
-        binding.btnNext1.setOnClickListener {
-            binding.stageSoup.visibility = View.GONE
-            binding.stageMain.visibility = View.VISIBLE
+        binding.btnDealOne.setOnClickListener { viewModel.setDanie("Schabowy, puree ziemniaczane, surówka", 25.0)
+        viewModel.setNapoj("kompot", price = 0.0)
+        }
+        binding.btnDealTwo.setOnClickListener { viewModel.setDanie("Pierś z kurczaka z frytkami", 25.0) }
+        binding.btnDealThree.setOnClickListener { viewModel.setDanie("Pierogi z kapustą i grzybami", 25.0)
+        viewModel.setNapoj("Piwo", 0.0)
+        }
+        binding.btnGoBack.setOnClickListener {
+            viewModel.confirmOrder()
+            findNavController().navigate(R.id.action_readyMealFragment_to_menuChoiceFragment)
         }
 
-        binding.btnMain1.setOnClickListener { viewModel.setDanie("Schabowy", 25.0) }
-        binding.btnMain2.setOnClickListener { viewModel.setDanie("Pierogi", 20.0) }
-        binding.btnMainNone.setOnClickListener { viewModel.setDanie("Brak", 0.0) }
-
-        binding.btnNext2.setOnClickListener {
-            binding.stageMain.visibility = View.GONE
-            binding.stageDrink.visibility = View.VISIBLE
-        }
-        binding.btnDrink1.setOnClickListener { viewModel.setNapoj("Kompot", 5.0) }
-        binding.btnDrink2.setOnClickListener { viewModel.setNapoj("Woda", 3.0) }
-        binding.btnDrinkNone.setOnClickListener { viewModel.setNapoj("Brak", 0.0) }
 
         binding.btnAddOrder.setOnClickListener {
             viewModel.confirmOrder()

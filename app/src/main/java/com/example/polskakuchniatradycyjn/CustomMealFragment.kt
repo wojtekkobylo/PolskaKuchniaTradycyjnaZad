@@ -42,6 +42,9 @@ class CustomMealFragment : Fragment() {
 
         binding.btnSoup1.setOnClickListener { viewModel.setZupa("Żurek", 15.0) }
         binding.btnSoup2.setOnClickListener { viewModel.setZupa("Barszcz", 10.0) }
+        binding.btnSoup3.setOnClickListener { viewModel.setZupa("Rosół", 10.0) }
+        binding.btnSoup4.setOnClickListener { viewModel.setZupa("Pomidorowa", 12.0) }
+        binding.btnSoupNone.setOnClickListener { viewModel.setZupa("Brak", 0.0) }
         
         binding.btnNext1.setOnClickListener {
             binding.stageSoup.visibility = View.GONE
@@ -51,6 +54,9 @@ class CustomMealFragment : Fragment() {
 
         binding.btnMain1.setOnClickListener { viewModel.setDanie("Golonka", 35.0) }
         binding.btnMain2.setOnClickListener { viewModel.setDanie("Placki", 18.0) }
+        binding.btnMain3.setOnClickListener { viewModel.setDanie("Schabowy", 25.0) }
+        binding.btnMain4.setOnClickListener { viewModel.setDanie("Pierogi", 20.0) }
+        binding.btnMainNone.setOnClickListener { viewModel.setDanie("Brak", 0.0) }
 
         binding.btnNext2.setOnClickListener {
             binding.stageMain.visibility = View.GONE
@@ -60,6 +66,9 @@ class CustomMealFragment : Fragment() {
 
         binding.btnDrink1.setOnClickListener { viewModel.setNapoj("Piwo", 10.0) }
         binding.btnDrink2.setOnClickListener { viewModel.setNapoj("Cola", 6.0) }
+        binding.btnDrink3.setOnClickListener { viewModel.setNapoj("Kompot", 5.0) }
+        binding.btnDrink4.setOnClickListener { viewModel.setNapoj("Woda", 3.0) }
+        binding.btnDrinkNone.setOnClickListener { viewModel.setNapoj("Brak", 0.0) }
 
         binding.btnAddOrder.setOnClickListener {
             viewModel.confirmOrder()

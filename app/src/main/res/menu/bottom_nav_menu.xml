@@ -3,13 +3,13 @@
     <item
         android:id="@+id/startFragment"
         android:title="Start"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/baseline_home_24" />
     <item
         android:id="@+id/menuChoiceFragment"
         android:title="Zamówienie"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/baseline_dining_24" />
     <item
         android:id="@+id/summaryFragment"
         android:title="Podsumowanie"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/baseline_price_check_24" />
 </menu>

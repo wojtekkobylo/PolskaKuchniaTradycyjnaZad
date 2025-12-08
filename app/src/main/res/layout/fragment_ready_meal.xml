@@ -14,119 +14,45 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Krok 1: Wybierz Zupę"
-            android:textSize="24sp"
+            android:text="ZESTAWY DNIA"
+            android:textSize="40sp"
+            android:textStyle="bold"
             android:layout_marginBottom="20dp"/>
             
         <Button
-            android:id="@+id/btnSoup1"
+            android:id="@+id/btnDealOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rosół (10 zł)" />
+            android:text="Schabowy z puree ziemniaczanym, surówką i kompotem (25zł)" />
             
         <Button
-            android:id="@+id/btnSoup2"
+            android:id="@+id/btnDealTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pomidorowa (12 zł)" />
+            android:text="Pierś z kurczaka z frytkami (25zł)" />
+
 
         <Button
-            android:id="@+id/btnSoupNone"
+            android:id="@+id/btnDealThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bez zupy" />
-            
+            android:text="Pierogi z kapustą i grzybami i piwo (17zł)" />
+
         <Button
-            android:id="@+id/btnNext1"
+            android:id="@+id/btnGoBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DALEJ"
-            android:backgroundTint="#2196F3"
+            android:text="Wróć do wyboru menu"
+            android:backgroundTint="#0000FF"
             android:layout_marginTop="30dp"/>
-    </LinearLayout>
 
-
-    <LinearLayout
-        android:id="@+id/stageMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone">
-        
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Krok 2: Wybierz Danie Główne"
-            android:textSize="24sp"
-            android:layout_marginBottom="20dp"/>
-            
-        <Button
-            android:id="@+id/btnMain1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Schabowy z Ziemniakami (25 zł)" />
-            
-        <Button
-            android:id="@+id/btnMain2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pierogi Ruskie (20 zł)" />
-
-         <Button
-            android:id="@+id/btnMainNone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bez dania" />
-            
-        <Button
-            android:id="@+id/btnNext2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DALEJ"
-            android:backgroundTint="#2196F3"
-            android:layout_marginTop="30dp"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/stageDrink"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone">
-        
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Krok 3: Wybierz Napój"
-            android:textSize="24sp"
-            android:layout_marginBottom="20dp"/>
-            
-        <Button
-            android:id="@+id/btnDrink1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kompot (5 zł)" />
-            
-        <Button
-            android:id="@+id/btnDrink2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Woda (3 zł)" />
-
-         <Button
-            android:id="@+id/btnDrinkNone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bez napoju" />
-            
         <Button
             android:id="@+id/btnAddOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DODAJ DO ZAMÓWIENIA"
-            android:backgroundTint="#4CAF50"
-            android:layout_marginTop="30dp"/>
+            android:backgroundTint="#00FF00"
+            />
     </LinearLayout>
 
 </FrameLayout>

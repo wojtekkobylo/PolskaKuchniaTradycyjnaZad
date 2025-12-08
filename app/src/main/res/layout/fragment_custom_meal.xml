@@ -30,6 +30,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Barszcz (10 zł)" />
+        <Button
+            android:id="@+id/btnSoup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosół (10 zł)" />
+
+        <Button
+            android:id="@+id/btnSoup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomidorowa (12 zł)" />
+
+
+        <Button
+            android:id="@+id/btnSoupNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bez zupy" />
 
         <Button
             android:id="@+id/btnNext1"
@@ -67,6 +85,24 @@
             android:text="Placki ziemniaczane (18 zł)" />
 
         <Button
+            android:id="@+id/btnMain3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schabowy z Ziemniakami (25 zł)" />
+
+        <Button
+            android:id="@+id/btnMain4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pierogi Ruskie (20 zł)" />
+
+        <Button
+            android:id="@+id/btnMainNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bez dania" />
+
+        <Button
             android:id="@+id/btnNext2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,6 +136,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cola (6 zł)" />
+
+        <Button
+            android:id="@+id/btnDrink3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kompot (5 zł)" />
+
+        <Button
+            android:id="@+id/btnDrink4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Woda (3 zł)" />
+
+        <Button
+            android:id="@+id/btnDrinkNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bez napoju" />
 
         <Button
             android:id="@+id/btnAddOrder"

@@ -42,6 +42,9 @@
         <action
             android:id="@+id/action_readyMeal_to_summary"
             app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_readyMealFragment_to_menuChoiceFragment"
+            app:destination="@id/menuChoiceFragment" />
     </fragment>
 
     <fragment

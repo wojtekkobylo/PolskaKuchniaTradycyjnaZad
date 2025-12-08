@@ -41,16 +41,14 @@ class OrderViewModel : ViewModel() {
     private fun updateCurrentSum() {
         val order = currentOrder.value!!
         currentSum.value = order.fullPrice()
-        currentOrder.value = order // trigger observer
+        currentOrder.value = order
     }
 
     fun confirmOrder() {
         val list = allOrders.value!!
         list.add(currentOrder.value!!)
         allOrders.value = list
-        
         recalculateTotal()
-
         currentOrder.value = PersonOrder()
         currentSum.value = 0.0
     }
@@ -67,8 +65,8 @@ class OrderViewModel : ViewModel() {
     private fun recalculateTotal() {
         var sum = 0.0
         val list = allOrders.value!!
-        for (o in list) {
-            sum += o.fullPrice()
+        for (cos in list) {
+            sum += cos.fullPrice()
         }
         totalSum.value = sum
     }
